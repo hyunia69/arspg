@@ -1,0 +1,96 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "regions": ["icn1"],
+  "crons": [],
+  "redirects": [
+    {
+      "source": "/main.htm",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/business_area.htm",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/business_partner.htm",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/business_record.htm",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/service_area.htm",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/service_system.htm",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/service_scenario.htm",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/customer_guide.htm",
+      "destination": "/guide",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.(js|css|woff|woff2|ttf|otf)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.(png|jpg|jpeg|gif|svg|ico|webp|avif)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+export { Hero } from './Hero'
+export { Features } from './Features'
+export { Services } from './Services'
+export { Partners } from './Partners'
+export { Pricing } from './Pricing'
+export { FAQ } from './FAQ'
+export { Contact } from './Contact'
+export { CTA } from './CTA'
