@@ -19,27 +19,27 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           'focus-ring disabled:opacity-50 disabled:pointer-events-none',
           // Variants
           variant === 'primary' && [
-            'bg-accent text-white',
-            'hover:bg-accent-hover hover:shadow-glow',
+            'bg-white text-black',
+            'hover:bg-white/90',
             'active:scale-[0.98]',
           ],
           variant === 'secondary' && [
-            'bg-background-elevated text-foreground',
-            'hover:bg-background-tertiary',
-            'border border-border',
+            'bg-white/[0.06] text-white',
+            'hover:bg-white/[0.1]',
+            'border border-white/[0.08]',
           ],
           variant === 'outline' && [
-            'bg-transparent text-foreground',
-            'border border-border hover:border-border-secondary',
-            'hover:bg-background-tertiary',
+            'bg-transparent text-white',
+            'border border-white/[0.15] hover:border-white/[0.3]',
+            'hover:bg-white/[0.04]',
           ],
           variant === 'ghost' && [
-            'bg-transparent text-foreground-secondary',
-            'hover:text-foreground hover:bg-background-tertiary',
+            'bg-transparent text-white/60',
+            'hover:text-white hover:bg-white/[0.04]',
           ],
           variant === 'link' && [
-            'bg-transparent text-accent underline-offset-4',
-            'hover:underline',
+            'bg-transparent text-white/70 underline-offset-4',
+            'hover:text-white hover:underline',
           ],
           // Sizes
           size === 'sm' && 'h-9 px-4 text-sm rounded-lg',
