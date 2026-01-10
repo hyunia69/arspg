@@ -21,7 +21,7 @@ const contactMethods = [
     description: '평일 09:00 - 18:00',
     value: CONTACT_INFO.phone,
     href: `tel:${CONTACT_INFO.phone}`,
-    action: '전화하기',
+    action: '',
   },
   {
     icon: (
@@ -33,7 +33,7 @@ const contactMethods = [
     description: '24시간 접수 가능',
     value: CONTACT_INFO.email,
     href: `mailto:${CONTACT_INFO.email}`,
-    action: '메일 보내기',
+    action: '',
   },
   {
     icon: (
@@ -88,12 +88,14 @@ export default function ContactPage() {
                 <h3 className="font-semibold text-foreground mb-1">{method.title}</h3>
                 <p className="text-xs text-foreground-tertiary mb-2">{method.description}</p>
                 <p className="text-sm text-foreground-secondary mb-4">{method.value}</p>
-                <a
-                  href={method.href}
-                  className="text-sm text-accent hover:text-accent/80 transition-colors font-medium"
-                >
-                  {method.action} →
-                </a>
+                {method.action && (
+                  <a
+                    href={method.href}
+                    className="text-sm text-accent hover:text-accent/80 transition-colors font-medium"
+                  >
+                    {method.action} →
+                  </a>
+                )}
               </CardContent>
             </Card>
           ))}

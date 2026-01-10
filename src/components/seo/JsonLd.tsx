@@ -16,8 +16,8 @@ export function OrganizationJsonLd({ type = 'Organization' }: OrganizationJsonLd
     address: {
       '@type': 'PostalAddress',
       streetAddress: CONTACT_INFO.address,
-      addressLocality: '서울특별시',
-      addressRegion: '강남구',
+      addressLocality: '경기도 성남시',
+      addressRegion: '중원구',
       addressCountry: 'KR',
     },
     contactPoint: {
@@ -84,8 +84,8 @@ export function LocalBusinessJsonLd() {
     address: {
       '@type': 'PostalAddress',
       streetAddress: CONTACT_INFO.address,
-      addressLocality: '서울특별시',
-      addressRegion: '강남구',
+      addressLocality: '경기도 성남시',
+      addressRegion: '중원구',
       addressCountry: 'KR',
     },
     openingHours: 'Mo-Fr 09:00-18:00',

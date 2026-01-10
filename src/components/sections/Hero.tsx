@@ -371,7 +371,7 @@ function MultiWindowMockup() {
 
 export function Hero({
   headline = 'ARS 전화결제의 새로운 기준',
-  subheadline = '15년 이상의 ARS/IVR 전문 노하우로 안정적이고 편리한 전화결제 솔루션을 제공합니다. 카드사 직접 연동부터 VMS까지, 당신의 비즈니스에 맞는 최적의 솔루션을 만나보세요.',
+  subheadline = '15년 이상의 ARS 전문 노하우로 안정적이고 편리한 전화결제 솔루션을 제공합니다. 국내 주요 PG사 연동부터 문자, 카카오톡 연동까지, 당신의 비즈니스에 맞는 최적의 솔루션을 만나보세요.',
   primaryCTA = { text: '무료 상담 신청', href: '/contact' },
   secondaryCTA = { text: '서비스 알아보기', href: '/services' },
 }: HeroProps) {
@@ -408,21 +408,6 @@ export function Hero({
 
       <div className="container-custom relative z-10 pt-20 md:pt-28">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Badge - Minimal style */}
-          <div
-            className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.05] border border-white/[0.08] mb-8 transition-all duration-1000 ease-smooth ${
-              isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-            }`}
-          >
-            <span className="relative flex h-1.5 w-1.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75" />
-              <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-white" />
-            </span>
-            <span className="text-sm text-white/70 font-medium">
-              신규 고객 첫 달 무료
-            </span>
-          </div>
-
           {/* Headline - Large, bold, clean */}
           <h1
             className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.1] transition-all duration-1000 ease-smooth delay-100 ${

@@ -104,10 +104,6 @@ const faqs = [
     question: '연간 결제 시 할인이 있나요?',
     answer: '네, 연간 결제 시 2개월 무료 혜택(약 17% 할인)을 제공합니다.',
   },
-  {
-    question: '무료 체험 기간이 있나요?',
-    answer: '신규 고객에게 Basic 플랜 기준 1개월 무료 체험을 제공합니다. 상담 시 문의해 주세요.',
-  },
 ]
 
 export default function PricingPage() {

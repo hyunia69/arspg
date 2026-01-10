@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/Button'
 
 export const metadata: Metadata = {
   title: '회사 소개',
-  description: '다삼솔루션은 15년 이상의 ARS/IVR 전문 노하우를 보유한 전화결제 솔루션 전문 기업입니다.',
+  description: '다삼솔루션은 15년 이상의 ARS 전문 노하우를 보유한 전화결제 솔루션 전문 기업입니다.',
 }
 
 const values = [

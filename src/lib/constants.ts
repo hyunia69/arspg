@@ -59,9 +59,9 @@ export const NAV_ITEMS: NavItem[] = [
 ]
 
 export const CONTACT_INFO = {
-  phone: '1588-1234',
-  email: 'contact@arspg.co.kr',
-  address: '서울특별시 강남구 테헤란로 123',
+  phone: '031-777-1087',
+  email: 'hyunia69@arspg.com',
+  address: '경기도 성남시 중원구 둔촌대로 474 선텍시티 1차 103호',
   businessHours: '평일 09:00 - 18:00',
 }
 

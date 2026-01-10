@@ -18,8 +18,8 @@ const transportInfo = [
       </svg>
     ),
     lines: [
-      { name: '2호선', station: '강남역 3번 출구', walk: '도보 5분' },
-      { name: '신분당선', station: '강남역 5번 출구', walk: '도보 3분' },
+      { name: '분당선', station: '야탑역 3번 출구', walk: '도보 10분' },
+      { name: '8호선', station: '모란역 1번 출구', walk: '도보 15분' },
     ],
   },
   {
@@ -30,8 +30,8 @@ const transportInfo = [
       </svg>
     ),
     lines: [
-      { name: '간선버스', station: '140, 144, 145, 341, 360', walk: '강남역 하차' },
-      { name: '지선버스', station: '3412, 4412', walk: '강남역 하차' },
+      { name: '일반버스', station: '55, 57, 320, 340', walk: '선텍시티 하차' },
+      { name: '마을버스', station: '3, 3-1', walk: '선텍시티 하차' },
     ],
   },
   {
