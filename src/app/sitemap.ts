@@ -1,6 +1,9 @@
 import { MetadataRoute } from 'next'
-import { createClient } from '@/lib/supabase/server'
+import { createClient } from '@supabase/supabase-js'
 import { SITE_CONFIG } from '@/lib/constants'
+
+// sitemap은 cookies를 사용하지 않는 클라이언트로 데이터를 가져옴
+export const dynamic = 'force-dynamic'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = SITE_CONFIG.url
@@ -96,7 +99,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   let noticePages: MetadataRoute.Sitemap = []
 
   try {
-    const supabase = await createClient()
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+    const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+
+    if (!supabaseUrl || !supabaseKey) {
+      throw new Error('Missing Supabase environment variables')
+    }
+
+    const supabase = createClient(supabaseUrl, supabaseKey)
     const { data: notices } = await supabase
       .from('arspg_notices')
       .select('id, updated_at')
