@@ -72,7 +72,7 @@ export function Header() {
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-3">
             <Button variant="primary" size="sm" asChild>
-              <Link href="/contact">무료 상담</Link>
+              <Link href="/contact">무료 상담임</Link>
             </Button>
           </div>
 
